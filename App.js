@@ -9,7 +9,6 @@ const fetchAdvice = async () => {
     const response = await fetch(apiEndpoint);
     const data = await response.json();
     const { slip } = data;
-    console.log(slip);
     advice.textContent = `"${slip.advice}"`;
     adviceNumber.textContent = `ADVICE #${slip.id}`;
   } catch (error) {
