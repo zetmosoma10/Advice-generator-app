@@ -1,0 +1,68 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 2.8rem;
+  color: var(--Light-Cyan);
+  background-color: var(--Dark-Blue);
+  height: 100vh;
+}
+
+.card {
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+  min-width: 343px;
+  max-width: 540px;
+  padding: 3rem 1.5rem;
+  position: relative;
+}
+
+.icon-dice {
+  border: 0;
+  position: absolute;
+  cursor: pointer;
+  right: 45%;
+  background-color: var(--Neon-Green);
+  padding: 10px;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.icon-dice:hover {
+  box-shadow: 0 0 15px var(--Neon-Green);
+}
+
+.divider-container {
+  margin-bottom: 2rem;
+}
+
+.advice-number {
+  font-size: 1.1rem;
+  color: var(--Neon-Green);
+  letter-spacing: 3.46px;
+}
+
+.advice {
+  font-size: 2.4rem;
+  letter-spacing: -0.26px;
+}
